@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эрүүл мэндийн яам - Монгол улсын засгийн газар</title>
+    <link rel="stylesheet" href="docs/style.css">
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white font-subs">
+    <!-- ✓ Header -->
+    <header>
+        <!-- Sliding News -->
+        <div class="flex flex-row text-scroll font-main bg-gray-200 h-6.5">
+            <marquee behavior="scroll" direction="left" class="p-1 w-full">
+                <span class="text-third px-2">ЭМЯ</span><span>Эрүүл мэндийн сайд С.Энхболд Нэг өрх-нэг хаалга шинжилгээний явуулын багийн ажлыг шалгав.</span>
+                <span class="text-third px-2">ЭМЯ</span><span>С.Энхболд: Монгол эрдэмтдийн бүтээлийг Эрүүл мэндийн яам дэмжиж ажиллана.</span>
+                <span class="text-third px-2">ЭМЯ</span><span>Ховд аймгийн БОЭТ-ийн Амаржих газарт 3 ихэр хүүхэд мэндэллээ.</span>
+                <span class="text-third px-2">ЭМЯ</span>
+            </marquee>
+            <div class="bg-primary text-white absolute px-3.5 top-0 right-0 py-1.5">Шуурхай мэдээ</div>
+        </div>
+
+        <!-- Logo Section -->
+        <section class="bg-primary py-2 px-3.75 sm:px-16.25 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+            <div class="container flex justify-center md:justify-between">
+                <div class="cursor-pointer">
+                    <a href="home.html">
+                        <img src="https://www.moh.gov.mn/images/logo_2021_new.png" class="h-15 md:h-17.5"></img>
+                    </a>
+                </div>
+
+                <div class="hidden lg:block text-white">
+                    <div class="flex flex-row space-x-5 revisit">
+                        <div class="flex flex-row px-3.75 py-4.5">
+                            <i class="fas fa-question-circle text-3.5xl text-third"></i>
+                            <div class="flex flex-col pl-2">
+                                <p class="font-bold text-xs uppercase">Түгээмэл Асуулт</p>
+                                <a href="#" class="hover:text-blue-600 text-xs">Тусламж</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-row px-3.75 py-4.5">
+                            <i class="fas fa-phone-volume text-3.5xl text-third"></i>
+                            <div class="flex flex-col pl-2">
+                                <p class="font-bold text-xs uppercase">Холбоо барих</p>
+                                <a href="#" class="hover:text-blue-600 text-xs">Залгах</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-row px-3.75 py-4.5">
+                            <i class="fas fa-envelope-open-text text-3.5xl text-third"></i>
+                            <div class="flex flex-col pl-2">
+                                <p class="font-bold text-xs uppercase">Санал, хүсэлт</p>
+                                <a href="#" class="hover:text-blue-600 text-xs">Илгээх</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ✓ Menu -->
+        <nav>
+            <!-- Menu Desktop -->
+            <div class="hidden lg:flex bg-second text-white font-subs text-xs uppercase px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+                <ul class="flex flex-1">
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Нүүр</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Бидний Тухай</span>
+                                <i class="fas fa-angle-down pl-1"></i>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden bg-white text-gray-700 uppercase font-subs text-0.1xs z-50">
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Яам бүтэц</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Яамны эрхэм зорилго</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Яамны үйл ажиллагааны стратегийн зорилт, зорилго</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Түүхэн замнал</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Яамны үйл ажиллагааны тэргүүлэх чиглэл</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Төрийн албан хаагчийн эрхэмлэх 9 зүйл</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Төрийн Үйлчилгээ</span>
+                                <i class="fas fa-angle-down pl-1"></i>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden bg-white text-gray-700 uppercase font-subs text-0.1xs z-50">
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="ded tses.html">Гадаад оронд зайлшгүй шаардлагаар эмчлүүлэх</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Магадлан итгэмжлэх</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Тусгай зөвшөөрөл</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Эрх Зүйн Акт</span>
+                                <i class="fas fa-angle-down pl-1"></i>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden bg-white text-gray-700 uppercase font-subs text-0.1xs z-50">
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Монгол улсын хууль</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Уих-н тогтоол</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Засгийн газрын тогтоол</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Сайдын тушаал</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Журам</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Төрийн бодлого</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Үндэсний хөтөлбөр</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Шинэ Короновирус</span>
+                                <i class="fas fa-angle-down pl-1"></i>
+                            </a>
+                                <ul class="dropdown-menu absolute hidden bg-white text-gray-700 uppercase font-subs text-0.1xs z-50">
+                                    <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Цаг үеийн мэдээ</a></li>
+                                    <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">(COVID-19) халдварын эмнэлзүйн заавар удирдамжууд</a></li>
+                                    <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Коронавируст халдвар (COVID-19)-ын бэлэн байдлыг хангахад чиглэсэн сургалт, илтгэл</a></li>
+                                    <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Коронавируст халдвар (COVID-19)-ын үед эмнэлгийн тусламжийн бэлэн байдлыг хангахад чиглэсэн заавар зөвлөмж</a></li>
+                                </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Ил Тод Байдал</span>
+                                <i class="fas fa-angle-down pl-1"></i>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden bg-white text-gray-700 uppercase font-subs text-0.1xs z-50">
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Үйл ажиллагааны ил тод байдал</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Хүний нөөцийн ил тод байдал</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Төрийн албаны салбар зөвлөл</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Төсөв санхүүгийн ил тод байдал</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Тендерийн баримт бичгийн ил тод байдал</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Иргэдийн санал гомдлын тойм</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Хяналт шинжилгээ үнэлгээ, дотоод аудит</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Авилгын эсрэг</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Ёс зүйн хороо</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Шилэн Данс</span>
+                                <i class="fas fa-angle-down pl-1"></i>
+                            </a>
+                            <ul class="dropdown-menu absolute hidden bg-white text-gray-700 uppercase font-subs text-0.1xs z-50">
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Төсвийн ерөнхийлөн захирагч</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Эрүүл мэндийн яам</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Тодруулга өгөх мэргэжилтэн</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Харьяа байгууллага</a></li>
+                                <li><a class="hover:bg-gray-100 hover:text-blue-500 py-1.5 px-2 w-74 block" href="#">Орон нутаг</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <a class="pt-3.5 pb-3 px-2 inline-flex items-center border-b-2 border-second hover:border-third transition-colors duration-500 ease-out">
+                                <span>Холбоо Барих</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Search Bar -->
+                    <li class="hidden xl:block text-white ml-5 my-auto">
+                        <input class="bg-primary px-3 py-1.5 text-0.1xs placeholder-third focus:outline-none" type="search" name="search" placeholder="Хайх" style="width: 111px; height: 27px;">
+                    </li>
+                    <li class="hidden xl:block px-3 my-auto">
+                        <button type="submit">
+                            <i class="fas fa-search text-xs"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <div class="flex lg:hidden flex-wrap items-center justify-between bg-second w-full py-2.5 px-3.75 sm:px-16.25 md:px-6 z-10">
+                <div class="lg:hidden">
+                    <button id="nav-toggle">
+                        <i class="fas fa-bars text-xs text-white"></i>
+                    </button>
+                </div>
+
+                <div class="flex flex-row items-center flex-shrink-0 text-white">
+                    <div class="ml-5 my-auto">
+                        <input class="bg-primary px-3 py-1.5 text-0.1xs placeholder-third focus:outline-none" type="search" name="search" placeholder="Хайх" style="width: 111px; height: 27px;">
+                    </div>
+                    <div class="px-3 my-auto">
+                        <button type="submit">
+                            <i class="fas fa-search text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Menu Items -->
+                <div id="nav-content" class="hidden w-full pt-2.5">
+                    <ul class="uppercase flex-1 text-white text-xs font-main">
+                        <li>
+                            <div class="relative border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Нүүр</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown relative border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Бидний Тухай</span>
+                                </a>
+                                <ul class="dropdown-menu hidden font-subs text-0.1xs">
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Яам бүтэц</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Яамны эрхэм зорилго</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Яамны үйл ажиллагааны стратегийн зорилт, зорилго</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Түүхэн замнал</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Яамны үйл ажиллагааны тэргүүлэх чиглэл</a></li>
+                                    <li><a class="hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Төрийн албан хаагчийн эрхэмлэх 9 зүйл</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown relative border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Төрийн Үйлчилгээ</span>
+                                </a>
+                                <ul class="dropdown-menu hidden font-subs text-0.1xs">
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="ded tses.html">Гадаад оронд зайлшгүй шаардлагаар эмчлүүлэх</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Магадлан итгэмжлэх</a></li>
+                                    <li><a class="hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Тусгай зөвшөөрөл</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown relative border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Эрх Зүйн Акт</span>
+                                </a>
+                                <ul class="dropdown-menu hidden font-subs text-0.1xs">
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Монгол улсын хууль</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Уих-н тогтоол</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Засгийн газрын тогтоол</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Сайдын тушаал</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Журам</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Төрийн бодлого</a></li>
+                                    <li><a class="hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Үндэсний хөтөлбөр</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="reladropdown tive border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Шинэ Короновирус</span>
+                                </a>
+                                    <ul class="dropdown-menu hidden font-subs text-0.1xs">
+                                        <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Цаг үеийн мэдээ</a></li>
+                                        <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">(COVID-19) халдварын эмнэлзүйн заавар удирдамжууд</a></li>
+                                        <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Коронавируст халдвар (COVID-19)-ын бэлэн байдлыг хангахад чиглэсэн сургалт, илтгэл</a></li>
+                                        <li><a class="hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Коронавируст халдвар (COVID-19)-ын үед эмнэлгийн тусламжийн бэлэн байдлыг хангахад чиглэсэн заавар зөвлөмж</a></li>
+                                    </ul>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown relative border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Ил Тод Байдал</span>
+                                </a>
+                                <ul class="dropdown-menu hidden font-subs text-0.1xs">
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Үйл ажиллагааны ил тод байдал</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Хүний нөөцийн ил тод байдал</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Төрийн албаны салбар зөвлөл</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Төсөв санхүүгийн ил тод байдал</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Тендерийн баримт бичгийн ил тод байдал</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Иргэдийн санал гомдлын тойм</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Хяналт шинжилгээ үнэлгээ, дотоод аудит</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Авилгын эсрэг</a></li>
+                                    <li><a class="hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Ёс зүйн хороо</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown relative border-b border-white">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Шилэн Данс</span>
+                                </a>
+                                <ul class="dropdown-menu hidden font-subs text-0.1xs">
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Төсвийн ерөнхийлөн захирагч</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Эрүүл мэндийн яам</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Тодруулга өгөх мэргэжилтэн</a></li>
+                                    <li><a class="border-b border-white hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Харьяа байгууллага</a></li>
+                                    <li><a class="hover:font-bold py-1.5 px-2 ml-3.75 w-74 block" href="#">Орон нутаг</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown relative">
+                                <a class="py-4 px-1.25 inline-flex items-center">
+                                    <span class="hover:text-third">Холбоо Барих</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ✓ Slider -->
+    <section>
+        <div class="carousel relative bg-white">
+            <div class="carousel-inner relative overflow-hidden w-full">
+                <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item absolute opacity-0">
+                    <img class="object-cover" src="https://www.moh.gov.mn/uploads/slides/cac4bf4f6115b79f5fd3f42c8fb77f8896907282.jpg" />
+                </div>
+                
+                <label for="carousel-1" class="prev control-1 w-10 h-10 ml-2 md:ml-20 absolute cursor-pointer hidden text-5xl font-bold text-gray-300 hover:text-white hover:leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-20 absolute cursor-pointer hidden text-5xl font-bold text-gray-300 hover:text-white hover:leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                    <img class="object-cover" src="https://www.moh.gov.mn/uploads/slides/4a8fc9135c315ad68aeab5e2ca99036890c8dae4.jpg" />
+                </div>
+                <label for="carousel-2" class="prev control-2 w-10 h-10 ml-2 md:ml-20 absolute cursor-pointer hidden text-5xl font-bold text-gray-300 hover:text-white hover:leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1" class="next control-2 w-10 h-10 mr-2 md:mr-20 absolute cursor-pointer hidden text-5xl font-bold text-gray-300 hover:text-white hover:leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+        
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                    <li class="inline-block mr-2">
+                        <label for="carousel-1" class="my-5 carousel-bullet cursor-pointer block text-3xl md:text-4xl lg:text-5xl text-white hover:text-gray-300">__</label>
+                    </li>
+                    <li class="inline-block mr-2">
+                        <label for="carousel-2" class="my-5 carousel-bullet cursor-pointer block text-3xl md:text-4xl lg:text-5xl text-white hover:text-gray-300">__</label>
+                    </li>
+                </ol>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ✓ News -->
+    <section class="bg-gray-100 py-7.5 px-3.75 sm:px-16.25 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+        <div class="flex flex-col">
+            <h1 class="text-primary font-bold text-xl">Мэдээ, мэдээлэл</h1>
+            <div class="bg-third w-12.5 h-0.75 mt-1.25 mb-2"></div>
+
+            <div class="flex flex-row text-scroll text-fifth mb-3.75">
+                <div class="text-primary font-bold hover:text-lightBlue-500 transition-colors duration-500 ease-out">Шинэ мэдээ</div>
+                <span class="px-2">/</span>
+                <div class="hover:text-lightBlue-500 transition-colors duration-500 ease-out">Сүүлд нэмэгдсэн</div>
+                <span class="px-2">/</span>
+                <div class="hover:text-lightBlue-500 transition-colors duration-500 ease-out">Долоо хоногийн онцлох</div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-4/7 relative overflow-hidden h-61.5 sm:h-85 md:h-69 lg:h-89 laptop:h-105">
+                <img class="h-full w-full object-cover" src="img/s2/i1.jpg" alt=""></img>  
+                <div class="flex flex-col absolute inset-x-0 bottom-0 p-3.75 self-center w-full text-white bg-second bg-opacity-80 z-10 font-subs">
+                    
+                    <a href="medee.html" class="text-xs font-bold uppercase">ДЭМБ-ын Монгол дахь суурин төлөөлөгч Сергей Диордицаг Эрүүл мэндийн сайд С.Энхболд хүлээн авч уулзлаа</a>
+                    <p class="text-0.1xs text-coolGray-300 py-1.25">2021-04-06 01:41:00</p>
+                    <p class="hidden sm:block overflow-ellipsis overflow-hidden text-xs h-8">
+                        Эрүүл мэндийн сайд С.Энхболд, ДЭМБ-ын суурин төлөөлөгч Сергей Диордица нар нь covid-19 өвчний нөхцөл байдал, авч хэрэгжүүлж буй арга хэмжээний талаар санал солилцох уулзалтыг хийсэн юм.
+                        Уулзалтын эхэнд Монгол улсад covid-19 өвчний дотоодын халдвар бүртгэгдэж, өдөрт гарах шинэ тохиолдлын тоо нэмэгдэж байгаа энэ үед Дэлхийн эрүүл мэндийн байгууллага бүх л тусламжийг үзүүлж буйд Эрүүл мэндийн сайд талархал илэрхийлэв.  Эрүүл мэндийн яамнаас бүх нөөц бололцоогоороо ажиллаж байна. Энэхүү ажилд Дэлхийн эрүүл мэндийн байгууллагын зүгээс боломжтой талаараа тусалж дэмжих болно гэдгийг ДЭМБ-ын суурин төлөөлөгч Сергей Диордица мэдэгдэв.
+                        Дэлхийн эрүүл мэндийн байгууллага нь олон оронд хийж буй судалгаан дээр үндэслэн улс орон бүрт тодорхой зөвлөгөө өгч, хамтран ажиллаж буй. Энэ хүрээнд өнгөрсөн жил гаруй хугацаанд Монгол улсын Эрүүл мэндийн яам болон Засгийн газартай хамтран ажиллаж ирэв. Ялангуяа covid-19 өвчний эсрэг авч хэрэгжүүлэх хариу арга хэмжээний талаар тогтмол зөвлөгөө мэдээлэл өгч, шаардлагатай арга хэмжээг хамтран хэрэгжүүлж байна. Энэ хүрээнд цаашид ч хамтран ажиллаж, зохих арга хэмжээг авч ажиллана гэдгийг хоёр тал онцлон тэмдэглэв.
+                        Эрүүл мэндийн яамны зүгээс covid-19 өвчний нөхцөл байдалд уялдуулан шуурхай шийдвэр гарган ажиллаж байна. Эмнэлгийн ор, эмч, ажилчдын тоо зэрэгт 7 хоног бүр төлөвлөлт хийж, шаардлагатай арга хэмжээг авч буй. Гэвч нөхцөл байдал амаргүй. Халдварын шинэ тохиолдлын тоо нэмэгдэж байгаа зэргээс шалтгаалж нөхцөл байдал хаашаа ч эргэж мэдэхээр байгаа. Иймээс зөвхөн covid-19 өвчин гэхгүйгээр үндсэн тусламж үйлчилгээгээ орхигдуулахгүйгээр энэ тооцоо судалгааг хийж, шийдвэр гарган ажиллаж байгаа гэдгээ Эрүүл мэндийн сайд С.Энхболд танилцууллаа.   
+                        Дэлхийн эрүүл мэндийн байгууллагын суурин төлөөлөгч Сергей Диордицагийн зүгээс шаардлагатай зөвлөгөө зөвлөмжийг өгч ирсэн жишгээрээ цаашид өгөөд явна. Үүнээс гадна шаардлагатай тусламж, хандив дээр ч хамтран ажиллах болно. Гол нь тусгаарлалтын хоног гэдэг зүйл дээр ойлголтын зөрүү гараад байна. Улсын онцгой комисс, Эрүүл мэндийн яамнаас баримталж буй тусгаарлах хоног аймаг орон нутагт өөрөөр мөрдөгдөж байна. Үүн дээр анхаарч ажиллахыг хүсье гэв.
+                        Covid-19 өвчин туссан ч гэрээр эмчилгээ хийлгэж буй хүмүүст тавих хяналт, тэдний биеийн байдлыг тогтмол хянах тал дээр илүү анхаарал хандуулах шаардлага байна. Эдгээр хүмүүсийн биеийн байдал хүндэрсэн нөхцөлд яаралтай эмнэлэгт хүргэх зохицуулалтыг анхаарч ажиллах нь чухал гэдэг дээр хоёр тал санал нэгдэж, зохих арга хэмжээ авч ажиллаж буй талаараа зөвлөлдсөн юм.
+                    </p>
+
+                    <!-- Icons -->
+                    <div class="sm:pt-2.5 w-22 flex justify-start">
+                        <a class="bg-white text-second mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="bg-white text-second mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="bg-white text-second mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col w-full md:w-3/7 overflow-hidden h-102 lg:h-105 md:ml-2.5 lg:ml-7.5 my-3.75 md:my-0">
+                <ul class="container w-full custom-scrollbar overflow-y-scroll">
+                    <li class="flex flex-row">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i2.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                Эрүүл мэндийн мэргэжилтнүүдийн чадавхийг бэхжүүлэх чиглэлээр цахим сургалт зохион байгууллаа
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Эрүүл мэндийн мэргэжилтнүүдийн чадавхийг бэхжүүлэх чиглэлээр цахим сургалт зохион байгууллаа
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i3.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                Эрүүл мэндийн салбарт хамтран ажиллах санамж бичигт гарын үсэг зурав
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Эрүүл мэндийн салбарт хамтран ажиллах санамж бичигт гарын үсэг зурав
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i4.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                ДЭМБ-ын Монгол дахь суурин төлөөлөгч Сергей Диордицаг Эрүүл мэндийн сайд С.Энхболд хүлээн авч уулзлаа
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Эрүүл мэндийн сайд С.Энхболд, ДЭМБ-ын суурин төлөөлөгч Сергей Диордица нар нь covid-19 өвчний нөхцөл байдал, авч хэрэгжүүлж буй арга хэмжээний талаар санал солилцох уулзалтыг хийсэн юм.
+                                Уулзалтын эхэнд Монгол улсад covid-19 өвчний дотоодын халдвар бүртгэгдэж, өдөрт гарах шинэ тохиолдлын тоо нэмэгдэж байгаа энэ үед Дэлхийн эрүүл мэндийн байгууллага бүх л тусламжийг үзүүлж буйд Эрүүл мэндийн сайд талархал илэрхийлэв.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i5.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold uppercase">
+                                Өсвөр үеийн эрүүл мэндийн 7 хоног эхэллээ
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                “ӨСВӨР ҮЕИЙН ЭРҮҮЛ МЭНДИЙН 7 ХОНОГ” нь дэлхийн өнцөг булан бүрт байгаа өсвөр насныханд тулгамдаж буй эрүүл мэндийн өвөрмөц асуудлуудын талаарх олон нийтийн ойлголтыг сайжруулах, өсвөр үеийнхний биеийн болон сэтгэцийн эрүүл мэндийг хамгаалах, эрүүл зан үйлийг нь дэмжих, төлөвшүүлэх зорилготой 4 сард зохион байгуулдаг. Өсвөр үеийн эрүүл мэндийн 7 хоног нь 2021 оны 4 сарын 5-11-ний өдрүүдэд зохион байгуулагдаж байна. Энэхүү өдрийг тохиолдуулан ЭХЭМҮТ-өөс вебинар сургалтыг 2021.04.05-ны өдөр зохион байгууллаа.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i6.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                Төрийн тусгай албан хаагчдын нэгдсэн эмнэлэг Мэдрэлийн мэс заслын эмчилгээг тусламж үйлчилгээндээ нэвтрүүллээ
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Төрийн тусгай алба хаагчдын нэгдсэн эмнэлэг нь 2021 оны 03 дугаар сарын 01-ний өдрөөс Мэдрэлийн мэс заслын эмчилгээг тусламж үйлчилгээндээ албан ёсоор нэвтрүүлж эхэллээ.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i7.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold uppercase">
+                                “Өсвөр үеийн эрүүл мэндийн 7 хоног” үйл ажиллагааг танилцуулах цахим сургалт боллоо
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                ЭХЭМҮТ нь 3 дахь жилдээ Өсвөр үеийн эрүүл мэндийн 7 хоногийг тэмдэглэн өнгөрүүлэх гэж байна.
+                                2021 онд Өсвөр үеийн эрүүл мэндийн 7 хоног нь 4 сарын 5-11-ний өдрүүдэд тохиож байна. Энэхүү ажлын хүрээнд Нийслэлийн дүүрэг, аймгуудын өсвөр үеийн эмч, эмнэлгийн мэргэжилтэн, нийгмийн ажилтан нарт зориулсан чиглүүлэх цахим сургалтыг 2021.03.31-ний өдөр зохион байгууллаа. 
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i8.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                Эрүүл мэндийн сайд С.Энхболд НҮБ-ын хүн амын сангийн Монгол дахь төлөөлөгчийн газрын тэргүүн Каори Ишикаваг хүлээн авч уулзлаа
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                НҮБ-ын хүн амын сангийн Монгол дахь төлөөлөгчийн газар нь Монгол улсын хүн амын нөхөн үржихүй, эмэгтэйчүүдийн аюулгүй байдал, өсвөр үеийн эрүүл мэндийн чиглэлд томоохон төсөл хөтөлбөрийг Эрүүл мэндийн яам болон бусад байгууллагатай хамтран хэрэгжүүлдэг юм.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i9.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold uppercase">
+                                Нэг сая ам долларын үнэ бүхий хамгаалах хэрэгслийг дэлхийн банкнаас эрүүл мэндийн яаманд хандивлав
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Дэлхийн банкны санхүүжилтээр “Монгол Улсын Ковид-19–өөс урьдчилан сэргийлэх, хариу арга хэмжээ авах, бэлэн байдлыг хангах” төсөл 2020 оны 4 дүгээр сараас хэрэгжиж байна. Төслийн хүрээнд Ковид-19 вирүсийн халдвараас урьдчилан сэргийлэх, олон нийтийн оролцоог хангах, хүний нөөцийн хөгжүүлэх, эмнэлгийн болон лабораторийн тоног төхөөрөмж, урвалж, хувийн хамгаалах хэрэгслээр хангахад үйл ажиллагааг хэрэгжүүлж байна.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i10.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold uppercase">
+                                Коронавирусыг шүлсэнд илрүүлэх оношлуурыг хэрэглээнд нэвтрүүллээ 
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                АШУҮИС-ийн Эмнэлзүйн молекул оношлогооны төв шүлсэнд SARS-CoV-2-ыг илрүүлэх шинжилгээний шинэ ПГУ оношлуурыг хэрэглээнд нэвтрүүлж эхэллээ. 
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i11.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                "Эмч эмнэлгийн ажилтнуудаа сонсьё" цахим уулзалт боллоо
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Эмч нарын эрхийг хамгаалах өдрийг тохиолдуулан "Эмч, эмнэлгийн ажилчдаа сонсьё" цахим уулзалтыг зохион байгууллаа. Уулзалтанд 21 аймаг, нийслэлийн, эмч эмнэлгийн ажилтнуудын төлөөлөл 600 гаруй хүн оролцов. Уг уулзалтын гол зорилго нь эмч эмнэлгийн ажилчдынхаа дуу хоолойг сонсож тэдэнд тулгамдаж байгаа асуудлуудыг хэлэлцэж, асуудлыг ажил хэрэг болгоход анхаарч ажиллах юм.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i12.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                Засгийн газраас цар тахалтай тэмцэж байгаа эмч, эмнэлгийн ажилтнуудад 2.8 тэрбум төгрөгийн дэмжлэг өгнө
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Дэлхийн эмч нарын баярын өдрөөр Монгол Улсын Ерөнхий сайд Л.Оюун-Эрдэнэ Хавдар судлалын үндэсний төв, Халдварт өвчин судлалын үндэсний төвд ажиллав.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex flex-row mt-3.75">
+                        <img class="h-auto w-2/5 object-cover" src="img/s2/i13.jpg" alt="">    
+                        <div class="flex flex-col px-2.5 self-center w-3/5 font-subs text-fifth">
+                            <p class="line-clamp-2 text-xs text-primary font-bold">
+                                Шүлснээс COVID-19 илрүүлэх оношлуурыг ашиглах гэрчилгээг олгов
+                            </p>
+                            <p class="text-0.1xs py-1.25">2021-04-06 01:41:00</p>
+                            <p class="text-xs small:hidden sm:line-clamp-2 md:hidden lg:line-clamp-2">
+                                Монгол эрдэмтдийн бүтээсэн шүлснээс Covid-19 өвчнийг илрүүлэх PCR оношлуурыг хэрэглээнд нэвтрүүлэх зөвшөөрлийг олгов.
+                            </p>
+                            <!-- Icons -->
+                            <div class="sm:pt-2.5 md:pt-0 lg:pt-2.5 w-22 flex justify-start">
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="https://moh.gov.mn/news/t/1" class="flex flex-row text-fifth hover:text-blue-700 cursor-pointer items-center justify-end px-2.5 py-2">
+                    <div class="pr-1 text-scroll">Бүгдийг харах</div>
+                    <i class="fa fa-chevron-circle-right text-0.1xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ✓ Төрийн үйлчилгээ -->
+    <section class="bg-white py-7.5 px-3.75 sm:px-16.25 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+        <div class="flex flex-col">
+            <h1 class="text-primary font-bold text-xl">Төрийн үйлчилгээ</h1>
+            <div class="bg-third w-12.5 h-0.75 my-1.25"></div>
+        </div>
+        <div class="hidden md:flex flex-row text-0.1xs md:text-sm text-primary font-extrabold uppercase">
+            <div class="flex flex-col w-1/3 mr-1.25 lg:mr-3.75">
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-calendar-plus"></i>
+                        <span>Шилэн данс</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-id-badge"></i>
+                        <span>Төсөлд санал авах</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-balance-scale-right"></i>
+                        <span>Эрх зүйн акт</span>
+                    </div>   
+                </a>
+            </div>
+            <div class="flex flex-col w-1/3 mx-1.25 lg:mx-3.75">
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-calendar-plus"></i>
+                        <span>Тусгай зөвшөөрөл</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-user-md"></i>
+                        <span>Гадаадад эмчлүүлэх</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-list-alt"></i>
+                        <span>Магадлан итгэмжлэл</span>
+                    </div>   
+                </a>
+            </div>
+            <div class="flex flex-col w-1/3 ml-1.25 lg:ml-3.75">
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-edit"></i>
+                        <span>Өргөдөл гомдол</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-pills"></i>
+                        <span>Эмийн үнэ</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-cogs"></i>
+                        <span>Ковид-19</span>
+                    </div>   
+                </a>
+            </div>
+        </div>
+
+        <div class="flex md:hidden flex-row text-0.1xs md:text-sm text-primary font-extrabold uppercase">
+            <div class="flex flex-col w-1/2 mr-1.25">
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-calendar-plus"></i>
+                        <span>Шилэн данс</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-id-badge"></i>
+                        <span>Төсөлд санал авах</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-balance-scale-right"></i>
+                        <span>Эрх зүйн акт</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-calendar-plus"></i>
+                        <span>Тусгай зөвшөөрөл</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-user-md"></i>
+                        <span>Гадаадад эмчлүүлэх</span>
+                    </div>   
+                </a>
+            </div>
+            <div class="flex flex-col w-1/2 ml-1.25">
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-list-alt"></i>
+                        <span>Магадлан итгэмжлэл</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold far fa-edit"></i>
+                        <span>Өргөдөл гомдол</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-pills"></i>
+                        <span>Эмийн үнэ</span>
+                    </div>   
+                </a>
+                <a class="h-20 px-3.75 my-3 bg-gray-100 border border-gray-200 rounded-sm hover:bg-second hover:text-white">
+                    <div class="flex flex-col items-center text-center text-0.1xs lg:text-xs py-auto">
+                        <i class="text-lg my-4 text-third font-bold fas fa-cogs"></i>
+                        <span>Ковид-19</span>
+                    </div>   
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✓ Static -->
+    <section class="bg-gray-100 py-7.5 px-3.75 sm:px-16.25 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-3/7 pb-7.5">
+                <div class="flex flex-col">
+                    <h1 class="text-primary font-bold text-xl">Тоон мэдээлэл</h1>
+                    <div class="bg-third w-12.5 h-0.75 mt-1.25 mb-3.75"></div>
+                    <p class="text-xs italic text-fifth">2021.03.17 өдрийн тоон мэдээлэл</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex flex-row h-1/3">
+                        <a class="py-auto w-1/2 px-3.75 py-3.75 my-2 bg-white border border-gray-200 mr-1.25 lg:mr-3.75">
+                            <div class="flex flex-col">
+                                <div class="flex flex-row">
+                                    <h1 class="text-2.5xl text-blue-700 font-bold">197</h1>
+                                    <span class="pl-1.5 pt-4 text-0.5xs text-red-600 ">↓19.3%</span>
+                                </div>
+                                <div class="text-0.1xs text-fifth font-bold uppercase">Төрөлт/Төрсөн эхийн тоо</div>
+                            </div>   
+                        </a>
+                        <a class="py-auto w-1/2 px-3.75 py-3.75 my-2 bg-white border border-gray-200 ml-1.25 lg:ml-3.75">
+                            <div class="flex flex-col">
+                                <div class="flex flex-row">
+                                    <h1 class="text-2.5xl text-blue-700 font-bold">3477</h1>
+                                    <span class="pl-1.5 pt-4 text-0.5xs text-red-600 ">↓6.5%</span>
+                                </div>
+                                <div class="text-0.1xs text-fifth font-bold uppercase">1800-0119 ирсэн дуудлагын тоо</div>
+                            </div>   
+                        </a>
+                    </div>
+
+                    <div class="flex flex-row h-1/3">
+                        <a class="py-auto w-1/2 px-3.75 py-3.75 my-2 bg-white border border-gray-200 mr-1.25 lg:mr-3.75">
+                            <div class="flex flex-col">
+                                <div class="flex flex-row">
+                                    <h1 class="text-2.5xl text-blue-700 font-bold">2500</h1>
+                                    <span class="pl-1.5 pt-4 text-0.5xs text-red-600 ">↓11.8%</span>
+                                </div>
+                                <div class="text-0.1xs text-fifth font-bold uppercase">Хүлээн авах яаралтай тусламж үйлчилгээ</div>
+                            </div>   
+                        </a>
+                        <a class="py-auto w-1/2 px-3.75 py-3.75 my-2 bg-white border border-gray-200 ml-1.25 lg:ml-3.75">
+                            <div class="flex flex-col">
+                                <div class="flex flex-row">
+                                    <h1 class="text-2.5xl text-blue-700 font-bold">1679</h1>
+                                    <span class="pl-1.5 pt-4 text-0.5xs text-red-600 ">↓7.4%</span>
+                                </div>
+                                <div class="text-0.1xs text-fifth font-bold uppercase ">Түргэн тусламжийн дуудлагын тоо</div>
+                            </div>   
+                        </a>
+                    </div>
+
+                    <div class="flex flex-row h-1/3">
+                        <a class="py-auto w-1/2 px-3.75 py-3.75 my-2 bg-white border border-gray-200 mr-1.25 lg:mr-3.75">
+                            <div class="flex flex-col">
+                                <div class="flex flex-row">
+                                    <h1 class="text-2.5xl text-blue-700 font-bold">11664</h1>
+                                    <span class="pl-1.5 pt-4 text-0.5xs text-third ">↑0.2%</span>
+                                </div>
+                                <div class="text-0.1xs text-fifth font-bold uppercase">Хэвтэн эмчлүүлж буй хүний тоо</div>
+                            </div>   
+                        </a>
+                        <a class="py-auto w-1/2 px-3.75 py-3.75 my-2 bg-white border border-gray-200 ml-1.25 lg:ml-3.75">
+                            <div class="flex flex-col">
+                                <div class="flex flex-row">
+                                    <h1 class="text-2.5xl text-blue-700 font-bold">285</h1>
+                                    <span class="pl-1.5 pt-4 text-0.5xs text-red-600 ">↓6.3%</span>
+                                </div>
+                                <div class="text-0.1xs text-fifth font-bold uppercase">Эрчимт эмчилгээний тасагт хэвтэн эмчлүүлэгчдийн тоо</div>
+                            </div>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-4/7 md:ml-2.5 lg:ml-7.5">
+                <div class="flex flex-col">
+                    <h1 class="text-primary font-bold text-xl">Төсөлд санал авч байна</h1>
+                    <div class="bg-third w-12.5 h-0.75 mt-1.25 mb-3.75"></div>
+                </div>
+
+                <ul class="bg-white text-xs my-2 h-86.25 md:h-105 lg:h-93.75 xl:h-86.25 px-3.75 custom-scrollbar overflow-y-scroll border border-gray-200">
+                    <li class="border-gray-200 border-b pt-3.75 pb-2.5 w-full">
+                        <p class="text-sixth py-0.5">2021 оны 2-р сарын 10</p>
+                        <a class="uppercase line-clamp-3 hover:text-blue-700" href="#">
+                            Монгол улсад ковид 19 халдвараас урьдчилан сэргийлэх, хариу арга хэмжээ авах, бэлэн байдлыг хангах төсөл (p175730) хамтрагч талуудын оролцооны төлөвлөгөөний баримт бичигийг олон нийтэд нээлттэй болгож, санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2021 оны 2-р сарын 10</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Монгол улсад ковид 19 халдвараас урьдчилан сэргийлэх, хариу арга хэмжээ авах, бэлэн байдлыг хангах төсөл (p175730) хөдөлмөрийн харилцааг зохицуулах удирдамжийн эхний хувилбарыг олон нийтэд нээлттэй болгож, санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2021 оны 02 сарын 22 хүртэл</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Клиникийн бүтэц, үйл ажиллагааны стандартад санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2021 оны 1-р сарын 22</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Дэлхийн банкны санхүүжилттэй ЭМЯ-ны хэрэгжүүлж буй Монгол улсад Ковид 19 халдвараас урьдчилан сэргийлэх, хариу арга хэмжээ авах, бэлэн байдлыг хангах төслийн хүрээлэн буй орчин ба нийгмийн менежментийн хүрээ баримт бичгийн төсөлд санал авах нь
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2021 оны 02 дугаар сарын 20 хүртэл</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Өрхийн эрүүл мэндийн төвийн үлгэрчилсэн дүрэм, гэрээ, шалгуур батлах тухай тушаалуудад нэмэлт оруулсан  Эрүүл мэндийн сайдын тушаалын төсөлд санал авч байна.
+                        </a>
+                    </li>
+                    
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2021 оны 02 дугаар сарын 05 хүртэл</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            “Монгол Улсад 2021 онд ашиглаж болох ахуйн хортон, шавж, мэрэгч устгалын болон ариутгал, халдваргүйтгэлийн зориулалтаар ашиглаж болох бодисын жагсаалт, хэрэглэх хэмжээг батлах тухай” тушаалын төсөлд 02 дугаар сарын 5 хүртэл санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2020 оны 02 дугаар сарын 05 хүртэл</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            “Эм, эмнэлгийн хэрэгсэлд импорт, экспортын лиценз олгох журам”-д өөрчлөлт оруулах тушаалын төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5"> 2021 оны 02 сарын 05</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            “Мансууруулах болон сэтгэцэд нөлөөт эмийг импортлох, үйлдвэрлэх, ханган нийлүүлэх журам”-ын  төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2020 оны 1 дүгээр сарын 28</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Монгол Улсын Засгийн газрын 2020 оны 1 дүгээр сарын 28-ны өдрийн 37 дугаар тогтоолыг үндэслэн Эрүүл мэндийг дэмжих сангийн санхүүжилтээр төсөл хөтөлбөрийг 2021 онд хэрэгжүүлэх сонгон шалгаруулалтад урьж байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2020 оны 12-р сарын 31 хүртэл</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Стандартын төсөлд 12 сарын 31 хүртэл санал авч байна. ЭҮТГ-ын эрүүл мэндийн байгууллагын стандартын асуудал хариуцсан ахлах зохион байгуулагч Ц.Тунгалагтамир Утас: 99083915
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-08-09</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Эрүүл мэндийг дэмжигч байгууллагыг шалгаруулах журмын төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-27</p>
+                        <a class="uppercase line-clamp-3 hover:text-blue-700" href="#">
+                            "Гадаадын эмнэлгийн мэргэжилтэнд мэргэжлийн үйл ажиллагаа эрхлэх зөвшөөрөл олгох, хүчингүй болгох журам"-д санал авч байна
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-27</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Үр хөндөлтийг зохицуулах журам"-д санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-17</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Хоол хүнсээр дамжих өвчний үеийн хариу арга хэмжээ авах журам"-д санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-20</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Эрүүл мэндийн чиглэлээр тусгай зөвшөөрөл олгох хэрэгцээний үнэлгээ хийх, мэргэжлийн үйл ажиллагааны төслийг үнэлэх, хэрэгцээний тодорхойлолт гаргах журам" -д санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-20</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Мэргэшүүлэх болон тасралтгүй сургалт зохион байгуулах, сургалт эрхлэх байгууллагыг сонгох, зөвшөөрөл олгох, сунгах, хүчингүй болгох журам"-ад санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-10</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Анагаах ухааны ёс зүйн хяналтын салбар хорооны үлгэрчилсэн дүрмийн тухай”" төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-07-01</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Сүрьеэгийн тусламж үйлчилгээг сайжруулах талаар авах зарим арга хэмжээний тухай”" төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-06-29</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Эм, эмнэлгийн хэрэгсэл, эрүүл мэндийн бүтээгдэхүүний тухай" хуулийн төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-06-18</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            "Гэр бүлийн хүчирхийлэлтэй тэмцэх тухай хуулийг дагаж гараж журам"-уудад санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-06-17</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Эрүүл мэндийг дэмжих сангаар санхүүжүүлэх төсөл, арга хэмжээний санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-05-31</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            ”Ундны болон ахуйн усны хоногт шаардагдах зохистой хэмжээ батлах тухай”-ын төсөлд санал авч байна.
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-05-20</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            ”Эмч, эрүүл мэндийн ажилтанд мөнгөн урамшуулал олгох журам”-ын төсөлд санал авч байна. 
+                        </a>
+                    </li>
+
+                    <li class="border-gray-200 border-b py-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-05-04</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Төрөлжсөн мэргэшлийн эмнэлгийн бүтэц, үйл ажиллагааны” төсөлд санал авч байна 
+                        </a>
+                    </li>
+
+                    <li class="pb-3.75 pt-2.5 w-full">
+                        <p class="text-sixth py-0.5">2017-05-01</p>
+                        <a class="line-clamp-3 hover:text-blue-700" href="#">
+                            Орчны эрүүл мэнд үндэсний 2 дахь хөтөлбөр.
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✓ Video -->
+    <section class="bg-white py-7.5 px-3.75 sm:px-16 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+        <div class="flex flex-col">
+            <h1 class="text-primary font-bold text-xl">Видео мэдээлэл</h1>
+            <div class="bg-third w-12.5 h-0.75 mt-1.25 mb-3.75"></div>
+        </div>
+
+        <div class="lg:hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 md:pr-1.25 lg:pr-3.75 flex items-center justify-center relative">
+                    <img class="h-auto w-full object-cover" src="img/video1.jpg" alt=""></img>
+                    <div class="absolute text-white text-5xl z-10">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col self-center w-full md:w-1/2 text-fifth pt-3.75 pb-7.5 md:pl-1.25 lg:pl-3.75">
+                    <p class="line-clamp-2 text-sm text-primary font-bold pr-4">
+                        Эрүүл мэндийн сайд С.Энхболд Цаг явсаар байна Сүрьеэтэй тэмцэх дэлхийн өдөр
+                    </p>
+                    <p class="text-xs text-footer">2021.03.24</p>
+                    <p class="text-xs py-2">
+                        Эрүүл мэндийн сайд С.Энхболд Цаг явсаар байна Сүрьеэтэй тэмцэх дэлхийн өдөр
+                    </p>
+                    <!-- Icons -->
+                    <div class="w-22 flex justify-start">
+                        <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+    
+                    <div class="flex justify-start">
+                        <a class="flex mt-3.75 bg-second text-xs py-1.5 px-3 hover:bg-blue-700 text-white hover:text-primary transition ease-in-out duration-700 font-medium rounded">
+                            Дэлгэрэнгүй
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="flex flex-col md:flex-row md:mt-3">
+                <div class="w-full md:w-1/2 md:pr-1.25 lg:pr-3.75 flex items-center justify-center relative">
+                    <img class="h-auto w-full object-cover" src="img/video2.jpg" alt=""></img>
+                    <div class="absolute text-white text-5xl z-10">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col self-center w-full md:w-1/2 text-fifth pt-3.75 pb-7.5 md:pl-1.25">
+                    <p class="line-clamp-2 text-sm text-primary font-bold pr-4">
+                        Эрүүл мэндийн сайд С.Энхболд Эрүүл мэндийн эмч, ажилчдын үйлдвэрчний эвлэлийн төлөөллийг хүлээн авч уулзлаа
+                    </p>
+                    <p class="text-xs text-footer">2021.02.25</p>
+                    <p class="text-xs py-2">
+                        Эрүүл мэндийн сайд С.Энхболд Эрүүл мэндийн эмч, ажилчдын үйлдвэрчний эвлэлийн төлөөллийг хүлээн авч уулзлаа
+                    </p>
+                    <!-- Icons -->
+                    <div class="w-22 flex justify-start">
+                        <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+    
+                    <div class="flex justify-start">
+                        <a class="flex mt-3.75 bg-second text-xs py-1.5 px-3 hover:bg-blue-700 text-white hover:text-primary transition ease-in-out duration-700 font-medium rounded">
+                            Дэлгэрэнгүй
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex">
+            <div class="flex flex-col">
+                <div class="flex flex-row w-full">
+                    <div class="w-1/2 pr-3.75 flex items-center justify-center">
+                        <img class="h-auto w-full object-cover" src="img/video1.jpg" alt=""></img>
+                        <div class="absolute text-white text-5xl z-10">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col self-center w-1/2 text-fifth pt-3.75 pb-7.5 pl-3.75">
+                        <p class="text-sm text-primary font-bold pr-4">
+                            Эрүүл мэндийн сайд С.Энхболд Цаг явсаар байна Сүрьеэтэй тэмцэх дэлхийн өдөр
+                        </p>
+                        <p class="text-xs text-footer">2021.03.24</p>
+                        <p class="text-xs py-2">
+                            Эрүүл мэндийн сайд С.Энхболд Цаг явсаар байна Сүрьеэтэй тэмцэх дэлхийн өдөр
+                        </p>
+                        <!-- Icons -->
+                        <div class="w-22 flex justify-start">
+                            <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="bg-coolGray-300 text-white mr-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+        
+                        <div class="flex justify-start">
+                            <a class="flex mt-3.75 bg-second text-xs py-1.5 px-3 hover:bg-blue-700 text-white hover:text-primary transition ease-in-out duration-700 font-medium rounded">
+                                Дэлгэрэнгүй
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flex flex-row w-full">
+                    <div class="flex flex-col text-right self-center w-1/2 text-fifth pt-3.75 pb-7.5 pr-3.75">
+                        <p class="line-clamp-2 text-sm text-primary font-bold pl-4">
+                            Эрүүл мэндийн сайд С.Энхболд Эрүүл мэндийн эмч, ажилчдын үйлдвэрчний эвлэлийн төлөөллийг хүлээн авч уулзлаа
+                        </p>
+                        <p class="text-xs text-footer">2021.02.25</p>
+                        <p class="text-xs py-2">
+                            Эрүүл мэндийн сайд С.Энхболд Эрүүл мэндийн эмч, ажилчдын үйлдвэрчний эвлэлийн төлөөллийг хүлээн авч уулзлаа
+                        </p>
+                        <!-- Icons -->
+                        <div class="flex justify-end">
+                            <a class="bg-coolGray-300 text-white ml-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="bg-coolGray-300 text-white ml-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="bg-coolGray-300 text-white ml-1 text-icon w-4 h-4 rounded-full flex justify-center items-center" href="#">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+        
+                        <div class="flex justify-end">
+                            <a class="flex mt-3.75 bg-second text-xs py-1.5 px-3 hover:bg-blue-700 text-white hover:text-primary transition ease-in-out duration-700 font-medium rounded">
+                                Дэлгэрэнгүй
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-1/2 pr-3.75 flex items-center justify-center">
+                        <img class="h-auto w-full object-cover" src="img/video2.jpg" alt=""></img>
+                        <div class="absolute text-white text-5xl z-10">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="https://moh.gov.mn/videos" class="flex flex-row text-fifth hover:text-blue-700 cursor-pointer items-center justify-end lg:mt-3">
+            <div class="pr-1 text-xs">Бүгдийг харах</div>
+            <i class="fa fa-chevron-circle-right text-0.1xs"></i>
+        </a>
+    </section>
+
+    <!-- ✓ Ad -->
+    <section class="bg-white px-3.75 sm:px-16 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+        <div class="flex flex-col md:flex-row">
+            <img class="w-full md:w-1/2 h-auto py-2 md:pr-1.25 lg:pr-3.75" src="img/banner1.png"></img>
+            <img class="w-full md:w-1/2 h-auto py-2 md:pl-1.25 lg:pl-3.75" src="img/banner2.png"></img>
+        </div>
+    </section>
+
+    <!-- ✓ Photo -->
+    <section class="bg-gray-100 py-7.5">
+        <div class="flex flex-col px-3.75 sm:px-16.25 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+            <h1 class="text-primary font-bold text-xl">Фото мэдээ</h1>
+            <div class="bg-third w-12.5 h-0.75 mt-1.25 mb-4"></div>
+        </div>
+        <!-- Scroll -->
+        <div class="items-center flex mx-auto">
+            <button class="absolute z-10 h-8 w-8 text-gray-300 hover:text-third left-0" id="prev-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Cards -->
+            <div id="container" class="flex flex-row flex-nowrap overflow-hidden items-stretch justify-start py-5">
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p1.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p2.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p3.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p4.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p5.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p6.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p7.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p8.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p9.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p10.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p11.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p12.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p13.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p14.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p15.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p16.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+
+                <div class="flex flex-shrink-0">
+                    <img src="img/s6/p17.jpg" class="w-auto h-22.5 sm:h-26.5 lg:h-28.5 xl:h-35.5 laptop:h-37.75 object-cover object-center hover:opacity-25" alt="">
+                </div>
+            </div>
+
+            <button class="absolute z-10 h-8 w-8 text-gray-300 hover:text-third right-0" id="next-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+        <a href="https://moh.gov.mn/photoalbums" class="flex flex-row text-fifth hover:text-blue-700 cursor-pointer items-center justify-end px-3.75 sm:px-16.25 md:px-6 lg:px-10.5 xl:px-21.25 laptop:px-31.25 2xl:px-53.25">
+            <div class="pr-1 text-xs">Бүгдийг харах</div>
+            <i class="fa fa-chevron-circle-right text-0.1xs"></i>
+        </a>
+    </section>
+
+    <!-- ✓ Footer -->
+    <footer class="bg-second py-5 px-3.75 sm:px-16.25 md:px-6 lg:pr-10.5 xl:pr-21.25 laptop:px-31.25 2xl:px-53.25 border-t-4 border-third">
+        <div class="flex flex-col md:flex-row text-xs text-footer">
+            
+            <div class="flex flex-col sm:flex-row w-full md:w-1/2">
+                <!-- Column 1 -->
+                <div class="flex flex-col w-full sm:w-1/2 md:w-2/5 pr-6">
+                    <h1 class="text-white font-medium uppercase">Холбоосууд</h1>
+                    <div class="bg-third w-10 h-0.75 mt-2 mb-2.5"></div>
+
+                    <ul class="flex flex-col leading-6">
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>ЭМЯ-ны дэргэдэх ТАЗСЗ</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>LICEMED</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Элэг бүтэн монгол</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Эмийн мэдээний сан</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Автомашин</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Тоног төхөөрөмж</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Анхан шат</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Хувийн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Тусгай зөвшөөрөлтэй байгууллага</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Статистикийн эмхэтгэл</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Чанарын хуудас</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Эм, эмнэлгийн хэрэгсэл үйлдвэрлэлийн хэлтэс</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex flex-col w-full sm:w-1/2 md:w-3/5 pr-6 pt-5 sm:py-0">
+                    <h1 class="text-white font-medium uppercase">Нэгдсэн эмнэлгүүд</h1>
+                    <div class="bg-third w-10 h-0.75 mt-2 mb-2.5"></div>
+
+                    <ul class="flex flex-col leading-6">
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Архангай аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Баян-Өлгий аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Хэнтий аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Хөвсгөл аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Увс аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Төв аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Сэлэнгэ аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Завхан аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дорноговь аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дархан-Уул аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Говьсүмбэр аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Булган аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Баянхонгор аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Сүхбаатар аймгийн Нэгдсэн эмнэлэг</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row w-full md:w-1/2 sm:pt-5 md:py-0">
+                <!-- Column 3 -->
+                <div class="flex flex-col w-full sm:w-1/2 pr-6 pt-5 sm:py-0">
+                    <h1 class="text-white font-medium uppercase">Газрууд</h1>
+                    <div class="bg-third w-10 h-0.75 mt-2 mb-2.5"></div>
+
+                    <ul class="flex flex-col leading-6">
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Баян-Өлгий аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Увс аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Улаанбаатар хот</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Сүхбаатар аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Архангай аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Баянхонгор аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Булган аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Говь-Алтай аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Говьсүмбэр аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дархан-Уул аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дорноговь аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дорнод аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Завхан аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Орхон аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Өвөрхангай аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Өмнөговь аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Сэлэнгэ аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Төв аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Ховд аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Хөвсгөл аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Хэнтий аймаг</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дундговь аймаг</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="flex flex-col w-full sm:w-1/2 pt-5 sm:py-0">
+                    <!-- First -->
+                    <h1 class="text-white font-medium uppercase">Холбоо барих</h1>
+                    <div class="bg-third w-10 h-0.75 mt-2 mb-2.5"></div>
+
+                    <ul class="flex flex-col mb-5">
+                        <p class="pt-1 pb-0.25">Засгийн газрын VIII байр, Олимпийн гудамж-2</p>
+                        <p class="py-0.25">Сүхбаатар дүүрэг 14210, Улаанбаатар хот</p>
+                        <p class="pt-0.25">Монгол Улс</p>
+                        <li class="flex flex-row items-center cursor-pointer">
+                            <i class="fa fa-phone-square pr-1"></i>
+                            <p>11-323002</p>
+                        </li>
+                        <p class="font-bold mt-3">Мэдээлэл хүлээн авх</p>
+                        <p>info@moh.gov.mn</p>
+                    </ul>
+
+                    <!-- Second -->
+                    <h1 class="text-white font-medium uppercase">Бүсийн оношлогоо, эмчилгээний төвүүд</h1>
+                    <div class="bg-third w-10 h-0.75 mt-2 mb-2.5"></div>
+
+                    <ul class="flex flex-col leading-6 mb-5">
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Дорнод аймгийн Бүсийн оношлогоо, эмчилгээний төв</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Орхон аймгийн Бүсийн оношлогоо, эмчилгээний төв</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Элэг бүтэн монгол</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Өвөрхангай аймгийн Бүсийн оношлогоо, эмчилгээний төв</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Ховд аймгийн Бүсийн оношлогоо, эмчилгээний төв</p>
+                        </li>
+                        <li class="flex flex-row items-start hover:text-white cursor-pointer">
+                            <i class="fas fa-chevron-right pt-1.75 pr-1 text-icon"></i>
+                            <p>Өмнөговь аймгийн Бүсийн оношлогоо, эмчилгээний төв</p>
+                        </li>
+                    </ul>
+
+                    <!-- Third -->
+                    <h1 class="text-white font-medium uppercase">Сошиал Медиа</h1>
+                    <div class="bg-third w-10 h-0.75 mt-2 mb-2.5"></div>
+
+                    <div class="flex flex-row">
+                        <a class="hover:bg-indigo-500 mr-0.75 text-xs w-8 h-8 flex justify-center items-center rounded-full border border-footer" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="hover:bg-lightBlue-500 mx-0.75 text-xs w-8 h-8 flex justify-center items-center rounded-full border border-footer" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="hover:bg-red-600 mx-0.75 text-xs w-8 h-8 flex justify-center items-center rounded-full border border-footer" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="hover:bg-orange-500 mx-0.75 text-xs w-8 h-8 flex justify-center items-center rounded-full border border-footer" href="#">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ✓ Bottom -->    
+    <section class="bg-second py-5 px-3.75 sm:px-16.25 md:px-6 lg:pr-10.5 xl:pr-21.25 laptop:px-31.25 2xl:px-53.25">
+        <div class="flex flex-col md:flex-row text-sm">
+            <div class="leading-6 pb-3 w-full text-gray-400 text-opacity-90 md:w-4/7">© 2021. ЭРҮҮЛ МЭНДИЙН ЯАМ - Зохиогчийн бүх эрх хуулиар хамгаалагдсан болно.</div>
+            <div class="md:leading-6 text-gray-300 text-opacity-30 flex justify-end w-full md:w-3/7">Веб сайтыг Грийн софт ХХК</div>
+        </div>
+    </section>
+
+    <!-- ✓ JS -->
+    <script>
+        document.getElementById("nav-toggle").onclick = function(){
+        document.getElementById("nav-content").classList.toggle("hidden");
+        };
+        var button_next = document.getElementById("next-btn");
+        button_next.onclick = function(){
+            var container = document.getElementById("container");
+            sideScroll(container, "right", 25, 300, 50);
+        };
+        var button_prev = document.getElementById("prev-btn");
+        button_prev.onclick = function(){
+            var container = document.getElementById("container");
+            sideScroll(container, "left", 25, 300, 50);
+        };
+
+        function sideScroll(element, direction, speed, distance, step){
+            scrollAmount=0;
+            var slideTimer = setInterval(function(){
+                if(direction == "left"){
+                    element.scrollLeft -= step;
+                }else{
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, speed);
+        }
+    </script>
+</body>
+</html>
